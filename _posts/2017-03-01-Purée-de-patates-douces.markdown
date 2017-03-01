@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "Purée de patates douces"
+date:   2017-03-01 15:18:30 +0100
+categories: Légumes
+tags: maison
+ingredients:
+- patates douces
+- crème
+- huile d'olive
+---
+# Ingrédients
+* 800g de patates douces
+* 20cl de crème fraîche
+* 2 c.a.s. d'huile d'olive
+
+# Préparation
+- Eplucher les patates douces
+- Couper les en dés grossiers
+
+# Cuisson
+- Faire cuire 30 minutes dans l'eau bouillante
+
+# Finalisation
+- Egouter les patates douces
+- Passer les au mixer avec la crème et l'huile d'olive
