@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "Purée de patates douces"
-date:   2017-03-01 15:18:30 +0100
 categories: Légumes
-tags: maison
+tag:
+- maison
 ingredients:
 - patates douces
 - crème

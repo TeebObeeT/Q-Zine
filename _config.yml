@@ -15,7 +15,7 @@ url: "https://TeebObeeT.github.io/Q-Zine/" # the base hostname & protocol for yo
 github_username:  TeebObeeT
 destination: _docs
 safe: true
-
+theme: architect
 
 
 # Build settings
