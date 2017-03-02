@@ -17,4 +17,4 @@ safe: true
 
 # Build settings
 markdown: kramdown
-theme: Architect
+theme: Merlot
