@@ -13,10 +13,8 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://TeebObeeT.github.io/Q-Zine/" # the base hostname & protocol for your site
 github_username:  TeebObeeT
-destination: _docs
 safe: true
-theme: architect
-
 
 # Build settings
 markdown: kramdown
+theme: architect
