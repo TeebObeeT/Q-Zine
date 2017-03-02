@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Purée de patates douces"
-categories: Légumes
-tag:
-- maison
-ingredients:
+categories:
+- Légumes
+- Maison
+tags:
 - patates douces
 - crème
 - huile d'olive
