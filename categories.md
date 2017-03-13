@@ -24,7 +24,7 @@ title: Catégories
 </div>
 
 
-{% for category in site.categories %}
+{% for category in site.categories | sort %}
   <h2 class='category-header' id="{{ category[0] }}-ref">{{ category[0] }}</h2>
   <ul>
     {% assign pages_list = category[1] %}

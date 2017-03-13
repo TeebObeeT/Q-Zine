@@ -8,7 +8,7 @@ title: Ingrédients
 
   {% if tags_list.first[0] == null %}
     {% for tag in tags_list %}
-      <a href="/tags#{{ tag }}-ref" class='list-group-item'>
+      <a href="/ingredients#{{ tag }}-ref" class='list-group-item'>
         {{ tag }} <span class='badge'>{{ site.tags[tag].size }}</span>
       </a>
     {% endfor %}
@@ -24,7 +24,7 @@ title: Ingrédients
 </div>
 
 
-{% for tag in site.tags %}
+{% for tag in site.tags | sort %}
   <h2 class='tag-header' id="{{ tag[0] }}-ref">{{ tag[0] }}</h2>
   <ul>
     {% assign pages_list = tag[1] %}
