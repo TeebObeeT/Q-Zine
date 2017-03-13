@@ -10,7 +10,7 @@ title: Ingrédients
     <ul>
       {% for tag in tags_list %}
         <li>
-          <a href="/ingredients#{{ tag }}-ref" class='list-group-item'>
+          <a href="#{{ tag }}-ref" class='list-group-item'>
             {{ tag }} <span class='badge'>{{ site.tags[tag].size }}</span>
           </a>
         </li>
@@ -20,19 +20,16 @@ title: Ingrédients
     <ul>
       {% for tag in tags_list %}
         <li>
-          <a href="/ingredients#{{ tag[0] }}-ref" class='list-group-item'>
+          <a href="#{{ tag[0] }}-ref" class='list-group-item'>
             {{ tag[0] }} <span class='badge'>{{ tag[1].size }}</span>
           </a>
         </li>  
       {% endfor %}
     </ul>
   {% endif %}
-
-  {% assign tags_list = nil %}
 </div>
 
-
-{% for tag in site.tags | sort %}
+{% for tag in tags_list | sort %}
   <h2 class='tag-header' id="{{ tag[0] }}-ref">{{ tag[0] }}</h2>
   <ul>
     {% assign pages_list = tag[1] %}
@@ -51,5 +48,6 @@ title: Ingrédients
 
     {% assign pages_list = nil %}
     {% assign group = nil %}
+    {% assign tags_list = nil %}
   </ul>
 {% endfor %}
