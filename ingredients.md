@@ -4,7 +4,7 @@ title: Ingrédients
 ---
 
 <div class='list-group'>
-  {% assign tags_list = site.tags %}
+  {% assign tags_list = site.tags | sort %}
 
   {% if tags_list.first[0] == null %}
     {% for tag in tags_list %}
