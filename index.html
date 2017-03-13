@@ -9,17 +9,43 @@ layout: default
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%m/%d/%Y" }}</span>
+        <span class="post-meta">{{ post.date | date: "%m/%d/%Y" }} - {{ post.categories | array_to_sentence_string: ','  }}</span>
         <h3>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          <span>{{ post.categories | array_to_sentence_string: ','  }}</span>
         </h3>
       </li>
     {% endfor %}
   </ul>
+</div>
 
 
+<div class="menu">
+  <div class='list-group'>
+    {% assign tags_list = site.tags | sort %}
+
+    {% if tags_list.first[0] == null %}
+      <ul>
+        {% for tag in tags_list %}
+          <li>
+            <a href="./ingredients.html#{{ tag }}-ref" class='list-group-item'>
+              {{ tag }} <span class='badge'>{{ site.tags[tag].size }}</span>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <ul>
+        {% for tag in tags_list %}
+          <li>
+            <a href="#{{ tag[0] }}-ref" class='list-group-item'>
+              {{ tag[0] }} <span class='badge'>{{ tag[1].size }}</span>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    {% assign tags_list = nil %}
+  </div>
 
   <p class="rss-subscribe"><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></p>
-
 </div>
