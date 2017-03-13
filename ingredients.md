@@ -29,7 +29,7 @@ title: Ingrédients
   {% endif %}
 </div>
 
-{% for tag in tags_list | sort %}
+{% for tag in tags_list %}
   <h2 class='tag-header' id="{{ tag[0] }}-ref">{{ tag[0] }}</h2>
   <ul>
     {% assign pages_list = tag[1] %}
