@@ -4,7 +4,7 @@ title: Catégories
 ---
 
 <div class='list-group'>
-  {% assign categories_list = site.categories %}
+  {% assign categories_list = site.categories | sort %}
 
   {% if categories_list.first[0] == null %}
     {% for category in categories_list %}
