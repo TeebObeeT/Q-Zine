@@ -10,13 +10,13 @@
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name"><a href="{{ '/' | absolute_url}}">{{ site.title | default: site.github.repository_name }}</a></h1>
+      <a href="{{ '/' | absolute_url}}"><h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1></a>
       <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
       {% if site.github.is_project_page %}
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
       {% endif %}
-      <a href="{{ '/' | absolute_url}}/ingredients.html">Liste d'ingrédients</a>
-      <a href="{{ '/' | absolute_url}}/categories.html">Toutes les catégories</a>
+      <a href="{{ '/' | absolute_url}}/ingredients.html" class="btn">Liste d'ingrédients</a>
+      <a href="{{ '/' | absolute_url}}/categories.html" class="btn">Toutes les catégories</a>
     </section>
 
     <section class="main-content">
