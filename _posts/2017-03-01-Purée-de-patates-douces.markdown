@@ -23,4 +23,4 @@ tags:
 
 # Finalisation
 - Egouter les patates douces
-- Passer les au mixer avec la crème et l'huile d'olive
+- Passer les au mixeur avec la crème et l'huile d'olive
