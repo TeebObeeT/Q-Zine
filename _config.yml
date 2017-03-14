@@ -16,5 +16,5 @@ github_username:  TeebObeeT
 safe: true
 
 # Build settings
-theme: jekyll-theme-modernist
+theme: jekyll-theme-cayman
 markdown: kramdown
