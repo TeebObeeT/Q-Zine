@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "Purée de patates douces"
+tags:
+- patates douces
+- crème
+- huile d'olive
+---
+# Ingrédients
+Rien
