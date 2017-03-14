@@ -16,5 +16,5 @@ github_username:  TeebObeeT
 safe: true
 
 # Build settings
-theme: jekyll-theme-leap-day
+theme: jekyll-theme-cayman
 markdown: kramdown
