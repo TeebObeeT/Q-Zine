@@ -57,7 +57,7 @@
                 <ul>
                   {% for tag in tags_list %}
                     <li>
-                      <a href="{{ '/' | absolute_url}}ingredients.html#{{ tag }}-ref" class='list-group-item'>
+                      <a href="{{ site.baseurl }}ingredients.html#{{ tag }}-ref" class='list-group-item'>
                         {{ tag | capitalize }} <span class='badge'>{{ site.tags[tag].size }}</span>
                       </a>
                     </li>
@@ -67,7 +67,7 @@
                 <ul>
                   {% for tag in tags_list %}
                     <li>
-                      <a href="{{ '/' | absolute_url}}ingredients.html#{{ tag[0] }}-ref" class='list-group-item'>
+                      <a href="{{ site.baseurl }}ingredients.html#{{ tag[0] }}-ref" class='list-group-item'>
                         {{ tag[0] | capitalize }} <span class='badge'>{{ tag[1].size }}</span>
                       </a>
                     </li>
