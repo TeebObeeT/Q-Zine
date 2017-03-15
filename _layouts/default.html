@@ -63,15 +63,13 @@
                   </h2>
                 {% endfor %}
               {% else %}
-                <ul>
-                  {% for tag in tags_list %}
-                    <li>
-                      <a href="{{ site.baseurl }}/ingredients.html#{{ tag[0] }}-ref" class='list-group-item'>
-                        {{ tag[0] | capitalize }} <span class='badge'>{{ tag[1].size }}</span>
-                      </a>
-                    </li>
-                  {% endfor %}
-                </ul>
+                {% for tag in tags_list %}
+                  <h2>
+                    <a href="{{ site.baseurl }}/ingredients.html#{{ tag[0] }}-ref" class='list-group-item'>
+                      {{ tag[0] | capitalize }} <span class='badge'>{{ tag[1].size }}</span>
+                    </a>
+                  </h2>
+                {% endfor %}
               {% endif %}
               {% assign tags_list = nil %}
             </div>
