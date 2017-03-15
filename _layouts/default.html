@@ -40,7 +40,7 @@
             {% for p in page.categories limit:1 %}
               {{ page.categories | sort | array_to_sentence_string:','  }}
             {% endfor %}
-            {{ page.date | date: "%m/%d/%Y" }}
+            - {{ page.date | date: "%m/%d/%Y" }} - 
           </span>
 
           {{ content }}
