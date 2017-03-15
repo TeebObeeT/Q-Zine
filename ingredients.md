@@ -4,32 +4,30 @@ title: Ingrédients
 ---
 
 <div class='list-group'>
+  <h1>Ingrédients</h1>
   {% assign tags_list = site.tags | sort %}
 
   {% if tags_list.first[0] == null %}
-    <ul>
-      {% for tag in tags_list %}
-        <li>
-          <a href="#{{ tag }}-ref" class='list-group-item'>
-            {{ tag }} <span class='badge'>{{ site.tags[tag].size }}</span>
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
+    {% for tag in tags_list %}
+      <h2>
+        <a href="#{{ tag }}-ref" class='list-group-item'>
+          {{ tag }} <span class='badge'>{{ site.tags[tag].size }}</span>
+        </a>
+      </h2>
+    {% endfor %}
   {% else %}
-    <ul>
-      {% for tag in tags_list %}
-        <li>
-          <a href="#{{ tag[0] }}-ref" class='list-group-item'>
-            {{ tag[0] }} <span class='badge'>{{ tag[1].size }}</span>
-          </a>
-        </li>  
-      {% endfor %}
-    </ul>
+    {% for tag in tags_list %}
+      <h2>
+        <a href="#{{ tag[0] }}-ref" class='list-group-item'>
+          {{ tag[0] }} <span class='badge'>{{ tag[1].size }}</span>
+        </a>
+      </h2>  
+    {% endfor %}
   {% endif %}
 </div>
 
 {% for tag in tags_list %}
+  <h1>Liste des recettes par ingrédient</h1>
   <h2 class='tag-header' id="{{ tag[0] }}-ref">{{ tag[0] }}</h2>
   <ul>
     {% assign pages_list = tag[1] %}
