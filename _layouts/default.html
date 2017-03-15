@@ -18,7 +18,7 @@
   <body>
     <header>
       <div class="inner">
-        <a href="{{ '/' | absolute_url }}">
+        <a href="{{ site.baseurl }}">
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
         </a>
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
@@ -48,21 +48,20 @@
               .tar.gz file
             </a>
             {% endif %}
-            <a href="{{ '/' | absolute_url}}ingredients.html" class="button">Liste d'ingrédients</a>
+
+            <h1><a href="{{ site.baseurl }}/ingredients.html">Liste d'ingrédients</a></h1>
 
             <div class='list-group'>
               {% assign tags_list = site.tags | sort %}
 
               {% if tags_list.first[0] == null %}
-                <ul>
-                  {% for tag in tags_list %}
-                    <li>
-                      <a href="{{ site.baseurl }}/ingredients.html#{{ tag }}-ref" class='list-group-item'>
-                        {{ tag | capitalize }} <span class='badge'>{{ site.tags[tag].size }}</span>
-                      </a>
-                    </li>
-                  {% endfor %}
-                </ul>
+                {% for tag in tags_list %}
+                  <h2>
+                    <a href="{{ site.baseurl }}/ingredients.html#{{ tag }}-ref" class='list-group-item'>
+                      {{ tag | capitalize }} <span class='badge'>{{ site.tags[tag].size }}</span>
+                    </a>
+                  </h2>
+                {% endfor %}
               {% else %}
                 <ul>
                   {% for tag in tags_list %}
@@ -77,7 +76,7 @@
               {% assign tags_list = nil %}
             </div>
 
-            <a href="{{ '/' | absolute_url}}categories.html" class="button">Toutes les catégories</a>
+            <a href="{{ site.baseurl }}/categories.html" class="button">Toutes les catégories</a>
 
             <div class='list-group'>
               {% assign categories_list = site.categories | sort %}
@@ -86,7 +85,7 @@
                 <ul>
                   {% for category in categories_list %}
                     <li>
-                      <a href="{{ '/' | absolute_url}}categories.html#{{ category }}-ref" class='list-group-item'>
+                      <a href="{{ site.baseurl }}/categories.html#{{ category }}-ref" class='list-group-item'>
                         {{ category }} <span class='badge'>{{ site.categories[category].size }}</span>
                       </a>
                     </li>
@@ -96,7 +95,7 @@
                 <ul>
                   {% for category in categories_list %}
                     <li>
-                      <a href="{{ '/' | absolute_url}}categories.html#{{ category[0] }}-ref" class='list-group-item'>
+                      <a href="{{ site.baseurl }}/categories.html#{{ category[0] }}-ref" class='list-group-item'>
                         {{ category[0] }} <span class='badge'>{{ category[1].size }}</span>
                       </a>
                     </li>
