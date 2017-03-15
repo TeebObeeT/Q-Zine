@@ -7,7 +7,7 @@ title: Recettes
   {% for post in site.posts %}
     <h2>
       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      <span class="post-meta">{{ post.date | date: "%m/%d/%Y" }} - {{ post.categories | array_to_sentence_string: ','  }}</span>
+      <span class="post-meta">{{ post.date | date: "%m/%d/%Y" }} - {{ post.categories | sort | array_to_sentence_string: ','  }}</span>
     </h2>
   {% endfor %}
 </div>
