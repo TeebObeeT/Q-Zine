@@ -48,8 +48,63 @@
               .tar.gz file
             </a>
             {% endif %}
-            <a href="{{ '/' | absolute_url}}/ingredients.html" class="button">Liste d'ingrédients</a>
-            <a href="{{ '/' | absolute_url}}/categories.html" class="button">Toutes les catégories</a>
+            <a href="{{ '/' | absolute_url}}ingredients.html" class="button">Liste d'ingrédients</a>
+
+            <div class='list-group'>
+              {% assign tags_list = site.tags | sort %}
+
+              {% if tags_list.first[0] == null %}
+                <ul>
+                  {% for tag in tags_list %}
+                    <li>
+                      <a href="{{ '/' | absolute_url}}ingredients.html#{{ tag }}-ref" class='list-group-item'>
+                        {{ tag }} <span class='badge'>{{ site.tags[tag].size }}</span>
+                      </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% else %}
+                <ul>
+                  {% for tag in tags_list %}
+                    <li>
+                      <a href="#{{ tag[0] }}-ref" class='list-group-item'>
+                        {{ tag[0] }} <span class='badge'>{{ tag[1].size }}</span>
+                      </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+              {% assign tags_list = nil %}
+            </div>
+
+            <a href="{{ '/' | absolute_url}}categories.html" class="button">Toutes les catégories</a>
+
+            <div class='list-group'>
+              {% assign categories_list = site.categories | sort %}
+
+              {% if categories_list.first[0] == null %}
+                <ul>
+                  {% for category in categories_list %}
+                    <li>
+                      <a href="{{ '/' | absolute_url}}categories.html#{{ category }}-ref" class='list-group-item'>
+                        {{ category }} <span class='badge'>{{ site.categories[category].size }}</span>
+                      </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% else %}
+                <ul>
+                  {% for category in categories_list %}
+                    <li>
+                      <a href="#{{ category[0] }}-ref" class='list-group-item'>
+                        {{ category[0] }} <span class='badge'>{{ category[1].size }}</span>
+                      </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+              {% assign categories_list = nil %}
+            </div>
 
 
           {% if site.github.is_project_page %}
