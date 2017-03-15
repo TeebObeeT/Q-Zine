@@ -9,74 +9,11 @@ layout: default
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%m/%d/%Y" }} - {{ post.categories | array_to_sentence_string: ','  }}</span>
-        <h3>
+        <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h3>
+          <span class="post-meta">{{ post.date | date: "%m/%d/%Y" }} - {{ post.categories | array_to_sentence_string: ','  }}</span>
+        </h2>
       </li>
     {% endfor %}
   </ul>
-</div>
-
-
-<div class="menu">
-
-  <div class='list-group'>
-    <h4>Catégories</h4>
-    {% assign categories_list = site.categories | sort %}
-
-    {% if categories_list.first[0] == null %}
-    <ul>
-      {% for category in categories_list %}
-      <li>
-        <a href="./categories.html#{{ category }}-ref" class='list-group-item'>
-          {{ category }} <span class='badge'>{{ site.categories[category].size }}</span>
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
-    {% else %}
-    <ul>
-      {% for category in categories_list %}
-      <li>
-        <a href="./categories.html#{{ category[0] }}-ref" class='list-group-item'>
-          {{ category[0] }} <span class='badge'>{{ category[1].size }}</span>
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
-    {% endif %}
-    {% assign categories_list = nil %}
-  </div>
-
-  <div class='list-group'>
-    <h4>Ingrédients</h4>
-    {% assign tags_list = site.tags | sort %}
-
-    {% if tags_list.first[0] == null %}
-      <ul>
-        {% for tag in tags_list %}
-          <li>
-            <a href="./ingredients.html#{{ tag }}-ref" class='list-group-item'>
-              {{ tag }} <span class='badge'>{{ site.tags[tag].size }}</span>
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-    {% else %}
-      <ul>
-        {% for tag in tags_list %}
-          <li>
-            <a href="./ingredients.html#{{ tag[0] }}-ref" class='list-group-item'>
-              {{ tag[0] }} <span class='badge'>{{ tag[1].size }}</span>
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-    {% endif %}
-    {% assign tags_list = nil %}
-  </div>
-
-
-  <p class="rss-subscribe"><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></p>
 </div>
