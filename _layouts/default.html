@@ -38,12 +38,9 @@
             <h1>{{page.title}}</h1>
           {% endif %}
           <span class="post-meta">
-            <!-- {% if page.categories!=null %} -->
-              {% for p in page.categories %}
-                {{ p }}
-              {% endfor %}
-
-            <!-- {% endif %} -->
+            {% if page.categories != '' %}
+              {{ page.categories | array_to_sentence_string: ','  }}
+            {% endif %}
             </span>
           {{ content }}
         </section>
