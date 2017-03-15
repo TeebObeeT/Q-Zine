@@ -5,15 +5,10 @@ layout: default
 <div class="home">
 
   <h1 class="page-heading">Recettes</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          <span class="post-meta">{{ post.date | date: "%m/%d/%Y" }} - {{ post.categories | array_to_sentence_string: ','  }}</span>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  {% for post in site.posts %}
+    <h2>
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <span class="post-meta">{{ post.date | date: "%m/%d/%Y" }} - {{ post.categories | array_to_sentence_string: ','  }}</span>
+    </h2>
+  {% endfor %}
 </div>

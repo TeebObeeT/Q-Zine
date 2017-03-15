@@ -4,28 +4,25 @@ title: Catégories
 ---
 
 <div class='list-group'>
+  <h1>Catégories</h1>
   {% assign categories_list = site.categories | sort %}
 
   {% if categories_list.first[0] == null %}
-    <ul>
-      {% for category in categories_list %}
-        <li>
-          <a href="#{{ category }}-ref" class='list-group-item'>
-            {{ category }} <span class='badge'>{{ site.categories[category].size }}</span>
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
+    {% for category in categories_list %}
+      <h2>
+        <a href="#{{ category }}-ref" class='list-group-item'>
+        {{ category }} <span class='badge'>{{ site.categories[category].size }}</span>
+        </a>
+      </h2>
+    {% endfor %}
   {% else %}
-    <ul>
-      {% for category in categories_list %}
-        <li>
-          <a href="#{{ category[0] }}-ref" class='list-group-item'>
-            {{ category[0] }} <span class='badge'>{{ category[1].size }}</span>
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
+    {% for category in categories_list %}
+      <h2>
+        <a href="#{{ category[0] }}-ref" class='list-group-item'>
+        {{ category[0] }} <span class='badge'>{{ category[1].size }}</span>
+        </a>
+      </h2>
+    {% endfor %}
   {% endif %}
 </div>
 
