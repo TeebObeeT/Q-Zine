@@ -34,13 +34,13 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          {% if page.title!=null %}
+          {% if page.title != blank %}
             <h1>{{page.title}}</h1>
           {% endif %}
           <span class="post-meta">
             <!-- {% if page.categories!=null %} -->
               {% for p in page.categories %}
-                {{ p }} 
+                {{ p }}
               {% endfor %}
 
             <!-- {% endif %} -->
