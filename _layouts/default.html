@@ -34,6 +34,7 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
+          <span class="post-meta">{{ post.date | date: "%m/%d/%Y" }} - {{ post.categories | array_to_sentence_string: ','  }}</span>
           {{ content }}
         </section>
 
@@ -49,7 +50,7 @@
             </a>
             {% endif %}
 
-            <h3><a href="{{ site.baseurl }}/ingredients.html">Liste d'ingrédients</a></h3>
+            <h3><a href="{{ site.baseurl }}/ingredients.html">Ingrédients</a></h3>
 
             <div class='list-group'>
               {% assign tags_list = site.tags | sort %}
@@ -75,7 +76,7 @@
               {% assign tags_list = nil %}
             </div>
 
-            <h3><a href="{{ site.baseurl }}/categories.html">Toutes les catégories</a></h3>
+            <h3><a href="{{ site.baseurl }}/categories.html">Catégories</a></h3>
 
             <div class='list-group'>
               {% assign categories_list = site.categories | sort %}
