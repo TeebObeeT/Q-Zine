@@ -37,9 +37,9 @@
           <h1>{{page.title}}</h1>
 
           <span class="post-meta">
-            {% for cat in page.categories %}
-              {{ page.categories | array_to_sentence_string  }}
-            {% endfor %}
+            {% if '*' in page.categories %}
+              {{ page.categories | array_to_sentence_string: ','  }}
+            {% endif %}
           </span>
 
           {{ content }}
