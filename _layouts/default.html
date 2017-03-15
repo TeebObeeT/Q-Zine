@@ -34,7 +34,7 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <span class="post-meta">{{ page.date | date: "%m/%d/%Y" }} - {{ page.categories | array_to_sentence_string: ','  }}</span>
+          <span class="post-meta">{{ page.date | date: "%m/%d/%Y" | default: }} - {{ page.categories | array_to_sentence_string: ',' | default:  }}</span>
           {{ content }}
         </section>
 
