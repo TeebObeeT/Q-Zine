@@ -3,7 +3,6 @@ layout: default
 title: Ingrédients
 ---
 {% assign tags_list = site.tags | sort %}
-<h1>Liste des recettes par ingrédient</h1>
 {% for tag in tags_list %}
   <h2 class='tag-header' id="{{ tag[0] }}-ref">{{ tag[0] | capitalize }}</h2>
   <ul>

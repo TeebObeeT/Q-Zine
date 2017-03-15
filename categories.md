@@ -4,7 +4,6 @@ title: Catégories
 ---
 {% assign categories_list = site.categories | sort %}
 
-<h1>Liste des recettes par catégorie</h1>
 {% for category in categories_list %}
   <h2 class='category-header' id="{{ category[0] }}-ref">{{ category[0] }}</h2>
   <ul>
