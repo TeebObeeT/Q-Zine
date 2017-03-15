@@ -39,7 +39,10 @@
           {% endif %}
           <span class="post-meta">
             <!-- {% if page.categories!=null %} -->
-              {{ page.categories | array_to_sentence_string: ','  }}
+              {% for p in page.categories %}
+                {{ p }} 
+              {% endfor %}
+
             <!-- {% endif %} -->
             </span>
           {{ content }}
