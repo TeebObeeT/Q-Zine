@@ -1,10 +1,9 @@
 ---
 layout: default
+title: Recettes
 ---
 
 <div class="home">
-
-  <h1 class="page-heading">Recettes</h1>
   {% for post in site.posts %}
     <h2>
       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>

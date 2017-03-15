@@ -34,13 +34,11 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          {% if page.title != "" %}
-            <h1>{{page.title}}</h1>
-          {% endif %}
+          <h1>{{page.title}}</h1>
           <span class="post-meta">
-            {% if page.categories.length > 0 %}
+            <!-- {% if page.categories.length > 0 %} -->
               {{ page.categories | array_to_sentence_string: ','  }}
-            {% endif %}
+            <!-- {% endif %} -->
             </span>
           {{ content }}
         </section>
