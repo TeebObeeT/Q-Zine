@@ -49,64 +49,53 @@
             </a>
             {% endif %}
 
-            <h1><a href="{{ site.baseurl }}/ingredients.html">Liste d'ingrédients</a></h1>
+            <h3><a href="{{ site.baseurl }}/ingredients.html">Liste d'ingrédients</a></h3>
 
             <div class='list-group'>
               {% assign tags_list = site.tags | sort %}
 
               {% if tags_list.first[0] == null %}
-                <ul>
-                  {% for tag in tags_list %}
-                    <li>
+                {% for tag in tags_list %}
                       <h4>
                         <a href="{{ site.baseurl }}/ingredients.html#{{ tag }}-ref" class='list-group-item'>
                           {{ tag | capitalize }} <span class='badge'>{{ site.tags[tag].size }}</span>
                         </a>
                       </h4>
-                    </li>
                   {% endfor %}
-                </ul>
+
               {% else %}
-                <ul>
                   {% for tag in tags_list %}
-                    <li>
                       <h4>
                         <a href="{{ site.baseurl }}/ingredients.html#{{ tag[0] }}-ref" class='list-group-item'>
                           {{ tag[0] | capitalize }} <span class='badge'>{{ tag[1].size }}</span>
                         </a>
                       </h4>
-                    </li>
                   {% endfor %}
-                </ul>
               {% endif %}
               {% assign tags_list = nil %}
             </div>
 
-            <a href="{{ site.baseurl }}/categories.html" class="button">Toutes les catégories</a>
+            <h3><a href="{{ site.baseurl }}/categories.html">Toutes les catégories</a></h3>
 
             <div class='list-group'>
               {% assign categories_list = site.categories | sort %}
 
               {% if categories_list.first[0] == null %}
-                <ul>
                   {% for category in categories_list %}
-                    <li>
+                    <h4>
                       <a href="{{ site.baseurl }}/categories.html#{{ category }}-ref" class='list-group-item'>
                         {{ category }} <span class='badge'>{{ site.categories[category].size }}</span>
                       </a>
-                    </li>
+                    </h4>
                   {% endfor %}
-                </ul>
               {% else %}
-                <ul>
                   {% for category in categories_list %}
-                    <li>
+                    <h4>
                       <a href="{{ site.baseurl }}/categories.html#{{ category[0] }}-ref" class='list-group-item'>
                         {{ category[0] }} <span class='badge'>{{ category[1].size }}</span>
                       </a>
-                    </li>
+                    </h4>
                   {% endfor %}
-                </ul>
               {% endif %}
               {% assign categories_list = nil %}
             </div>
