@@ -38,8 +38,9 @@
 
           <span class="post-meta">
             {% for p in page.categories limit:1 %}
-              {{ page.categories | array_to_sentence_string: ','  }}
+              {{ page.categories | array_to_sentence_string:','  }}
             {% endfor %}
+            {{ page.date | date: "%m/%d/%Y" }}
           </span>
 
           {{ content }}
