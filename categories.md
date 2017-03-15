@@ -27,8 +27,8 @@ title: Catégories
 </div>
 
 
+<h1>Liste des recettes par catégorie</h1>
 {% for category in categories_list %}
-  <h1>Liste des recettes par catégorie</h1>
   <h2 class='category-header' id="{{ category[0] }}-ref">{{ category[0] }}</h2>
   <ul>
     {% assign pages_list = category[1] %}
