@@ -67,7 +67,7 @@
                 <ul>
                   {% for tag in tags_list %}
                     <li>
-                      <a href="#{{ tag[0] }}-ref" class='list-group-item'>
+                      <a href="{{ '/' | absolute_url}}ingredients.html#{{ tag[0] }}-ref" class='list-group-item'>
                         {{ tag[0] }} <span class='badge'>{{ tag[1].size }}</span>
                       </a>
                     </li>
@@ -96,7 +96,7 @@
                 <ul>
                   {% for category in categories_list %}
                     <li>
-                      <a href="#{{ category[0] }}-ref" class='list-group-item'>
+                      <a href="{{ '/' | absolute_url}}categories.html#{{ category[0] }}-ref" class='list-group-item'>
                         {{ category[0] }} <span class='badge'>{{ category[1].size }}</span>
                       </a>
                     </li>
