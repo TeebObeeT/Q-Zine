@@ -16,7 +16,10 @@ div.menu {
   background: #2879d0;
   color: white;
 }
-
+div.menu a {
+  color: white;
+  size:1.1rem;
+}
 div.menu ul.sub-menu {
   display:none;
 }
