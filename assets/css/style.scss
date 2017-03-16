@@ -20,9 +20,13 @@ div.menu:hover ul.sub-menu {
 }
 
 .badge {
-  border-radius: 100%;
 
 
+  width:1rem;
+  height:1rem;
+  border-radius:50%;
+  font-size: 0.8rem;
+  
   padding: 4px;
   border: 1px solid #2879d0;
   color: #999999;
