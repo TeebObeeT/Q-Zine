@@ -16,17 +16,17 @@ div.menu ul.sub-menu {
   display:none;
 }
 div.menu a.button {
-  background: url(../../img/empty-button.png);
+  background: url({{ "/img/empty-button.png" | prepend: site.baseurl }});
   display: block !important;
 }
 div.menu a.ingredients {
-  background: url(../../img/ingredients-button.png) !important;
+  background: url({{ "/img/ingredients-button.png" | prepend: site.baseurl }}) !important;
 }
 a.rss {
   background: url({{ "/img/atom-button.png" | prepend: site.baseurl }}) !important;
 }
 a.git {
-  background: url({{ "/img/git-button.png" | prepend: site.baseurl }}) !important;
+  background: url({{ "/img/github-button.png" | prepend: site.baseurl }}) !important;
 }
 
 div.menu:hover ul.sub-menu {
