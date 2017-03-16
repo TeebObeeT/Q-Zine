@@ -20,9 +20,11 @@ div.menu a.button {
   background: url(../../img/empty-button.png);
   display: block !important;
 }
+div.menu a.ingredients {
+  background: url(../../img/ingredients-button.png) !important;
+}
 div.menu:hover ul.sub-menu {
   display:block;
-  background: #3889e0;
   list-style-type: none;
 }
 div.menu:hover ul.sub-menu a {
