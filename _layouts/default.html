@@ -54,7 +54,7 @@
             {% endif %}
 
             <div class="menu">
-              <a href="{{ site.baseurl }}/ingredients.html">Ingrédients</a>
+              <a href="{{ site.baseurl }}/ingredients.html" class="button">Ingrédients</a>
               <ul class='sub-menu'>
                 {% assign tags_list = site.tags | sort %}
                 {% if tags_list.first[0] == null %}
@@ -81,7 +81,7 @@
             </div>
 
             <div class='menu'>
-              <a href="{{ site.baseurl }}/categories.html">Catégories</a>
+              <a href="{{ site.baseurl }}/categories.html" class="button">Catégories</a>
               <ul class='sub-menu'>
                 {% assign categories_list = site.categories | sort %}
                 {% if categories_list.first[0] == null %}
@@ -117,7 +117,7 @@
             {% if site.github.is_user_page %}
               <a href="{{ site.github.repository_url }}" class="button"><small>Suivez moi sur</small> GitHub</a>
             {% endif %}
-            
+
           {% if site.github.is_project_page %}
             <p class="repo-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> maintenu par <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</p>
           {% endif %}
