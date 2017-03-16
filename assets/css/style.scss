@@ -18,7 +18,8 @@ div.menu {
 }
 div.menu a {
   color: white;
-  size:1.1rem;
+  font-size:1.3rem;
+  font-weight: bold;
 }
 div.menu ul.sub-menu {
   display:none;
@@ -28,7 +29,10 @@ div.menu:hover ul.sub-menu {
   background: #3889e0;
   list-style-type: none;
 }
-
+div.menu:hover ul.sub-menu a {
+  font-size:1.1rem;
+  font-weight: normal;
+}
 .badge {
   font-size: 0.9rem;
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
