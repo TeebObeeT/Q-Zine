@@ -22,10 +22,11 @@ div.menu ul.sub-menu {
 div.menu:hover ul.sub-menu {
   display:block;
   background: #BBB;
+  list-style-type: none;
 }
 
 .badge {
   font-size: 0.9rem;
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
-  color: #999;
+  color: #white;
 }
