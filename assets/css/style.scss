@@ -16,7 +16,9 @@ div.menu ul.sub-menu {
   display:none;
   background: #3889e0;
 }
-
+div.menu a.button {
+  background: none;
+}
 div.menu:hover ul.sub-menu {
   display:block;
   background: #3889e0;
