@@ -18,6 +18,7 @@ div.menu ul.sub-menu {
 }
 div.menu a.button {
   background: url('../img/button-empty.png');
+  display: block !important;
 }
 div.menu:hover ul.sub-menu {
   display:block;
