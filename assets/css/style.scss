@@ -12,19 +12,11 @@ span.date {
   color:#BBB;
 }
 
-div.menu {
-  background: #2879d0;
-  color: white;
-}
-div.menu a {
-  color: white;
-  font-size:1.1rem;
-  font-weight: bold;
-}
 div.menu ul.sub-menu {
   display:none;
   background: #3889e0;
 }
+
 div.menu:hover ul.sub-menu {
   display:block;
   background: #3889e0;
@@ -42,8 +34,4 @@ div.menu ul.sub-menu li:hover {
   color: white !important;
   float: right;
   font-weight: bolder;
-}
-
-div.menu a.button img {
-  display: none;
 }
