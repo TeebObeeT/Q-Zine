@@ -59,7 +59,7 @@
             {% endif %}
 
             <div class="menu">
-                <a href="{{ site.baseurl }}/ingredients.html">Ingrédients</a>
+              <a href="{{ site.baseurl }}/ingredients.html">Ingrédients</a>
               <ul class='sub-menu'>
                 {% assign tags_list = site.tags | sort %}
                 {% if tags_list.first[0] == null %}
@@ -85,31 +85,35 @@
               </ul>
             </div>
 
-            <h3><a href="{{ site.baseurl }}/categories.html">Catégories</a></h3>
-
-            <div class='list-group'>
-              {% assign categories_list = site.categories | sort %}
-
-              {% if categories_list.first[0] == null %}
-                  {% for category in categories_list %}
-                    <h4>
-                      <a href="{{ site.baseurl }}/categories.html#{{ category }}-ref" class='list-group-item'>
-                        {{ category }} <span class='badge'>{{ site.categories[category].size }}</span>
-                      </a>
-                    </h4>
-                  {% endfor %}
-              {% else %}
-                  {% for category in categories_list %}
-                    <h4>
-                      <a href="{{ site.baseurl }}/categories.html#{{ category[0] }}-ref" class='list-group-item'>
-                        {{ category[0] }} <span class='badge'>{{ category[1].size }}</span>
-                      </a>
-                    </h4>
-                  {% endfor %}
-              {% endif %}
-              {% assign categories_list = nil %}
+            <div class='menu'>
+              <a href="{{ site.baseurl }}/categories.html">Catégories</a>
+              <ul class='sub-menu'>
+                {% assign categories_list = site.categories | sort %}
+                {% if categories_list.first[0] == null %}
+                    {% for category in categories_list %}
+                      <li>
+                        <a href="{{ site.baseurl }}/categories.html#{{ category }}-ref" class='list-group-item'>
+                          {{ category }}
+                        </a>
+                        <span class='badge'>{{ site.categories[category].size }}</span>
+                      </li>
+                    {% endfor %}
+                {% else %}
+                    {% for category in categories_list %}
+                      <li>
+                        <a href="{{ site.baseurl }}/categories.html#{{ category[0] }}-ref" class='list-group-item'>
+                          {{ category[0] }}
+                        </a>
+                        <span class='badge'>{{ category[1].size }}</span>
+                      </li>
+                    {% endfor %}
+                {% endif %}
+                {% assign categories_list = nil %}
+              </ul>
             </div>
-            <p class="rss-subscribe"><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></p>
+
+
+            <p class="rss-subscribe"><a href="{{ "/feed.xml" | prepend: site.baseurl }}"><img src='{{ site.baseurl }}/img/rss.svg' alt='RSS'/></a></p>
 
           {% if site.github.is_project_page %}
             <p class="repo-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> maintenu par <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</p>
