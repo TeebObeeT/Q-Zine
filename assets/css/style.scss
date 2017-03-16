@@ -23,7 +23,7 @@ div.menu a.ingredients {
   background: url(../../img/ingredients-button.png) !important;
 }
 a.rss {
-  background: url(../../img/rss-button.png) !important;
+  background: url({{ /img/rss-button.png | prepend: site.baseurl }}) !important;
 }
 a.git {
   background: url(../../img/github-button.png) !important;
