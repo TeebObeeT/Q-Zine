@@ -14,8 +14,11 @@ span.date {
 
 div.menu {
   background: #2879d0;
+}
+div.menu h1 {
   color: white;
 }
+
 div.menu ul.sub-menu {
   display:none;
 }
@@ -28,5 +31,5 @@ div.menu:hover ul.sub-menu {
 .badge {
   font-size: 0.9rem;
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
-  color: #white;
+  color: #white !important;
 }
