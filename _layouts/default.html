@@ -110,21 +110,18 @@
             <div class='menu'>
               ?
               <ul class='sub-menu'>
-                <li>
-                  <a href="{{ "/feed.xml" | prepend: site.baseurl }}"><img src='{{ site.baseurl }}/img/rss.svg' alt='RSS'/></a>
-                </li>
+                <a href="{{ "/feed.xml" | prepend: site.baseurl }}"><img src='{{ site.baseurl }}/img/rss.svg' alt='RSS'/></a>
 
               {% if site.github.is_project_page %}
-                <li><a href="{{ site.github.repository_url }}" class="button"><small>Voir sur</small> GitHub</a></li>
+                <a href="{{ site.github.repository_url }}" class="button"><small>Voir sur</small> GitHub</a>
               {% endif %}
               {% if site.github.is_user_page %}
-                <li><a href="{{ site.github.repository_url }}" class="button"><small>Suivez moi sur</small> GitHub</a></li>
+                <a href="{{ site.github.repository_url }}" class="button"><small>Suivez moi sur</small> GitHub</a>
               {% endif %}
 
           {% if site.github.is_project_page %}
             <p class="repo-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> maintenu par <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</p>
           {% endif %}
-
           <p>Page générée par <a href="https://pages.github.com">GitHub Pages</a>.</p>
         </ul>
         </aside>
