@@ -23,6 +23,13 @@ div.menu a.button {
 div.menu a.ingredients {
   background: url(../../img/ingredients-button.png) !important;
 }
+a.rss {
+  background: url(../../img/rss-button.png) !important;
+}
+a.git {
+  background: url(../../img/github-button.png) !important;
+}
+
 div.menu:hover ul.sub-menu {
   display:block;
   list-style-type: none;

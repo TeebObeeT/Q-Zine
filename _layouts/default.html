@@ -108,14 +108,14 @@
             </div>
 
 
-            <p class="rss-subscribe"><a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="button"><img src='{{ site.baseurl }}/img/rss.svg' alt='RSS'/></a></p>
+            <p class="rss-subscribe"><a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="button rss"><img src='{{ site.baseurl }}/img/rss.svg' alt='RSS'/></a></p>
 
 
             {% if site.github.is_project_page %}
-              <a href="{{ site.github.repository_url }}" class="button"><small>Voir sur</small> GitHub</a>
+              <a href="{{ site.github.repository_url }}" class="button git"><small>Voir sur</small> GitHub</a>
             {% endif %}
             {% if site.github.is_user_page %}
-              <a href="{{ site.github.repository_url }}" class="button"><small>Suivez moi sur</small> GitHub</a>
+              <a href="{{ site.github.repository_url }}" class="button git"><small>Suivez moi sur</small> GitHub</a>
             {% endif %}
 
           {% if site.github.is_project_page %}
