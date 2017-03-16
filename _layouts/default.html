@@ -37,10 +37,10 @@
           <h1>{{page.title}}</h1>
 
           <span class="post-meta">
+            <span class="date">{% if page.date %} {{ page.date | date: "%m/%d/%Y" }} - {% endif%}</span>
             {% for p in page.categories limit:1 %}
               {{ page.categories | sort | array_to_sentence_string:','  }}
             {% endfor %}
-            {% if page.date %} - {{ page.date | date: "%m/%d/%Y" }} - {% endif%}
           </span>
 
           {{ content }}

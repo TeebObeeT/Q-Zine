@@ -7,7 +7,12 @@ title: Recettes
   {% for post in site.posts %}
     <h2>
       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      <span class="post-meta">{{ post.date | date: "%m/%d/%Y" }} - {{ post.categories | sort | array_to_sentence_string: ','  }}</span>
+      <span class="post-meta">
+        <span class="date">{% if post.date %} {{ post.date | date: "%m/%d/%Y" }} - {% endif%}</span>
+        {% for p in post.categories limit:1 %}
+          {{ post.categories | sort | array_to_sentence_string:','  }}
+        {% endfor %}
+      </span>
     </h2>
   {% endfor %}
 </div>
