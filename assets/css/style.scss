@@ -22,6 +22,9 @@ div.menu a.button {
 div.menu a.ingredients {
   background: url({{ "/img/ingredients-button.png" | prepend: site.baseurl }}) !important;
 }
+div.menu a.categories {
+  background: url({{ "/img/categories-button.png" | prepend: site.baseurl }}) !important;
+}
 a.rss {
   background: url({{ "/img/atom-button.png" | prepend: site.baseurl }}) !important;
 }
