@@ -54,7 +54,9 @@ div.menu ul.sub-menu li:hover {
   div.menu:hover ul.sub-menu {
     display:none;
   }
-  div.menu {
+  div.menu,
+  p.repo-owner,
+  p.github-pages {
     display: inline-block !important;
   }
 
