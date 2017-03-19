@@ -54,6 +54,9 @@ div.menu ul.sub-menu li:hover {
   div.menu:hover ul.sub-menu {
     display:none;
   }
+  div.menu {
+    width:100%;
+  }
 
   div.menu a.ingredients ,
   div.menu a.categories {
