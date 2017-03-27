@@ -2,9 +2,9 @@
 layout: default
 title:  "Quiche chèvre tomate"
 categories:
-- Maison
 - Sortie
 - Invités
+- Maison
 tags:
 - oeufs
 - crème
