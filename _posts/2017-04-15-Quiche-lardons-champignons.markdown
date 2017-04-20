@@ -21,8 +21,8 @@ tags:
 - herbes/épices
 
 ## Préparation
-- Faire revenir les champignons coupés en 2 dans une poêle à feu vif (5min?)
-- Rajouter les lardons dans la poêle (1min?)
+- Faire revenir les champignons coupés en 2 dans une poêle à feu vif (10min)
+- Rajouter les lardons dans la poêle (2min)
 - Etaler la pâte dans un moule à tarte.
 - Mettre champignons et lardons dans la pâte (pas le jus)
 - Saladier: Mélange oeufs + crème + herbes/épices
