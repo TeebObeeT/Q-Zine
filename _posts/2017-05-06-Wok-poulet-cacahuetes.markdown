@@ -34,7 +34,7 @@ tags:
 - Emincer l'oignon
 - Faire une julienne des carottes (ou gros rappage)
 - Faire griller les cacahuètes dans le wok (~3 min)
-- Faire ramollir les cacahuètes dans le wok (~3 min)
+- Faire ramollir les carottes dans le wok (~3 min)
 
 ## Cuisson
 - Faire revenir dans une casserole le riz dans l'huile (~2 min)
