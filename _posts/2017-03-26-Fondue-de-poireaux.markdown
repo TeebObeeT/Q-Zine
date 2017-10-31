@@ -2,7 +2,7 @@
 layout: default
 title: "Fondue de poireaux"
 categories:
-- Légume
+- Légumes
 - Maison
 - Voile
 - Invités
