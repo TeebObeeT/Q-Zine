@@ -14,6 +14,7 @@ tags:
 - pate brisée
 ---
 ## Ingrédients
+
 - 450 g de patates douces
 - 1 gros oeuf ou 2 petits
 - 115 g de beurre
@@ -25,6 +26,7 @@ tags:
 - (opt: cernaux de noix)
 
 ## Préparation
+
 - Etaler la pâte dans un moule à tarte.
 - Faire cuire les patates douces dans l'eau bouillante durant 30 minutes.
 - Les éplucher et les réduire en purée.
@@ -32,4 +34,5 @@ tags:
 - Verser le mélange sur la pâte
 
 ## Cuisson
+
 - Enfourner pour 45 à 50 minutes à 180°

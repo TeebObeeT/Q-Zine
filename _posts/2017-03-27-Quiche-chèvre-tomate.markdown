@@ -12,7 +12,9 @@ tags:
 - tomate
 - pate brisée
 ---
+
 ## Ingrédients
+
 - 4 oeufs
 - 200g de chèvre mi frais ou bûche
 - 2 c.a.s. de crème
@@ -21,6 +23,7 @@ tags:
 - herbes/épices
 
 ## Préparation
+
 - Etaler la pâte dans un moule à tarte.
 - Répartir le chèvre en petits morceaux dans la pâte
 - Saladier: Mélange oeufs + crème + herbes/épices
@@ -28,4 +31,5 @@ tags:
 - Rajouter les tomates coupées en 2 par dessus et enfoncer légèrement
 
 ## Cuisson
+
 - Enfourner pour 30 à 40 minutes à 200°
