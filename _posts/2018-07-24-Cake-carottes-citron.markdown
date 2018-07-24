@@ -7,7 +7,7 @@ categories:
 - Maison
 - Dessert
 tags:
-- carotte
+- carottes
 - farine
 - amande
 - sucre

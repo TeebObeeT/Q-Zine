@@ -5,6 +5,7 @@ categories:
 - Invités
 - Maison
 - Plat
+- Voile
 tags:
 - poulet
 - carottes
