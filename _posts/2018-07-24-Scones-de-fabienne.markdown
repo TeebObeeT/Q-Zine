@@ -32,4 +32,4 @@ tags:
 
 ## Cuisson
 
-- Enfourner à 240° pendant 25 à 30 mn.
+- Enfourner à teebo@teebo.eu 240° pendant 25 à 30 mn.
