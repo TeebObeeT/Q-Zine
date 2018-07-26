@@ -7,8 +7,8 @@ categories:
 - Sortie
 - Invités
 tags:
-- patates douces
-- oeufs
+- patate douce
+- oeuf
 - beurre
 - sucre
 - pate brisée

@@ -5,7 +5,7 @@ categories:
 - Légumes
 - Maison
 tags:
-- patates douces
+- patate douce
 - crème
 - huile d'olive
 ---

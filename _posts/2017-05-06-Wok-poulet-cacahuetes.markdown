@@ -8,13 +8,13 @@ categories:
 - Voile
 tags:
 - poulet
-- carottes
-- oignons
+- carotte
+- oignon
 - pâte de curry
 - crème de coco
-- cacahuètes
+- cacahuète
 - riz
----
+--- 
 
 ## Ingrédients
 
