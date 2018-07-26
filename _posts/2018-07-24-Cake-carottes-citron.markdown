@@ -7,12 +7,12 @@ categories:
 - Maison
 - Dessert
 tags:
-- carottes
+- carotte
 - farine
 - amande
 - sucre
 - beurre
-- oeufs
+- oeuf
 - citron
 - levure
 ---
