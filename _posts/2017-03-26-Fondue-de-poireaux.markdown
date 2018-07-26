@@ -7,10 +7,10 @@ categories:
 - Voile
 - Invités
 tags:
-- Poireaux
-- Crème
-- Moutarde
-- Beurre
+- poireaux
+- crème
+- moutarde
+- beurre
 ---
 
 ## Ingrédients
