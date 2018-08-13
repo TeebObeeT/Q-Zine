@@ -7,7 +7,7 @@ categories:
 - Maison
 - Dessert
 tags:
-- oeufs
+- oeuf
 - farine
 - levure
 - orange

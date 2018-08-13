@@ -6,7 +6,7 @@ categories:
 - Invités
 - Maison
 tags:
-- oeufs
+- oeuf
 - crème
 - chèvre
 - tomate
