@@ -5,7 +5,6 @@ categories:
 - Sortie
 - Invités
 - Maison
-- Dessert
 tags:
 - farine
 - levure
