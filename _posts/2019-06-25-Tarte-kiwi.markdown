@@ -18,7 +18,7 @@ tags:
 ## Ingrédients
 
 - 80 g de sucre
-- 30g d'amendes en poudre
+- 30g d'amandes en poudre
 - 1 cas de crème fraiche
 - 4 oeufs
 - 1 pate brisée
