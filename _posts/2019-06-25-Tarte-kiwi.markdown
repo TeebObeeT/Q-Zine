@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Tarte aux Kiwi"
+title:  "Tarte aux kiwis"
 categories:
 - Sortie
 - Invités
