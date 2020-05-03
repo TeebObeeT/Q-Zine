@@ -8,11 +8,11 @@ categories:
 - Dessert
 tags:
 - pate brisée
-- creme
+- crème
 - sucre
 - oeuf
 - kiwi
-- amandes
+- amande
 ---
 
 ## Ingrédients
