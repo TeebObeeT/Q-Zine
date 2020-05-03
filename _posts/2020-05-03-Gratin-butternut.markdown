@@ -11,7 +11,7 @@ tags:
 - crème
 - huile d'olive
 - cumin
-- buchette de chêvre
+- chèvre
 - oignon
 - comté
 ---
